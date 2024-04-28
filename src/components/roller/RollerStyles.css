@@ -126,7 +126,7 @@
   position: absolute;
   top: 50%;
 
-  font-size: min(120px, 11vh);
+  font-size: min(70px, 11vh);
   animation: animate-rolling-spinning var(--rolling-animation-duration) var(--animation-timing-function);
   animation-iteration-count: var(--animation-iteration-count);
   transform: translateX(-50%) translateY(-50%) rotateY(-90deg);

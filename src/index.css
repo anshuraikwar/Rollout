@@ -1,5 +1,5 @@
 :root {
-  font-family: GothicBold;
+  font-family: Damageplan;
   line-height: 1.5;
   font-weight: 400;
 
@@ -18,8 +18,8 @@
 }
 
 @font-face {
-  font-family: 'GothicBold';
+  font-family: 'Damageplan';
   font-style: normal;
   font-weight: normal;
-  src: local('Gothic'), url('./assets/fonts/DharmaGothicRndC-Bold.ttf') format('truetype')
+  src: local('Damageplan'), url('./assets/fonts/DamageplanPersonalUseBold-2Od9W.ttf') format('truetype')
 }

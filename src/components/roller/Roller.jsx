@@ -12,7 +12,7 @@ function Roller({
   tape,
 }) {
   const texts = [
-    '________',
+    '___________',
     'TYPOGRAPHY',
   ];
 
