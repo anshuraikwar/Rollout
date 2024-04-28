@@ -5,11 +5,14 @@ import svgr from 'vite-plugin-svgr';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [eslint(),
-  react(),
-  svgr({
-    svgrOptions: {
-      // svgr options
-    },
-  }),],
+  base: "/Rollout",
+  plugins: [
+    eslint(),
+    react(),
+    svgr({
+      svgrOptions: {
+        // svgr options
+      },
+    }),
+  ],
 })
