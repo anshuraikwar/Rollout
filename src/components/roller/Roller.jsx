@@ -73,7 +73,6 @@ function Roller({
                     className="roll-text-position-cont"
                     style={{
                       animationDelay: `${delay}`,
-                      animationIterationCount: 'var(--animation-iteration-count)',
                     }}
                   >
                     <div
@@ -82,12 +81,10 @@ function Roller({
                       <div
                         className="roll-text-char"
                         style={{
-                          fontSize: 'min(120px, 11vh)',
                           animationDelay: `${delay}`,
-                          animationIterationCount: 'var(--animation-iteration-count)',
                         }}
                       >
-                        <div style={{ transform: 'rotateZ(90deg)' }}>
+                        <div>
                           {string}
                         </div>
                       </div>
