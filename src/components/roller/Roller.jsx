@@ -20,7 +20,7 @@ function Roller({
     const timeout = setTimeout(() => {
       const tapeContents = document.getElementById(`${tape.id}-rolled-out-content-with-bg`);
       if (tapeContents) {
-        tapeContents.style.width = 'calc(100vw + (3 * var(--roll-width)))';
+        tapeContents.style.width = 'calc(100vw + (4 * var(--roll-width)))';
       }
       clearTimeout(timeout);
     }, tape.delay);

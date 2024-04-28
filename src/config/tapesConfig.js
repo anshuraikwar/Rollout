@@ -35,7 +35,7 @@ const tapes = [
   {
     id: 'roller-5',
     top: '-17vh',
-    left: 'calc(-1.5 * var(--roll-width))',
+    left: 'calc(-2 * var(--roll-width))',
     rotate: 28,
     theme: 'black',
     delay: 4 * rollerOffset,
@@ -46,7 +46,7 @@ const tapes = [
     left: 'calc(-2* var(--roll-width))',
     rotate: -22,
     theme: 'white',
-    delay: 5 * rollerOffset,
+    delay: 6 * rollerOffset,
   },
   {
     id: 'roller-7',
@@ -54,7 +54,7 @@ const tapes = [
     left: 'calc(-1.5 * var(--roll-width))',
     rotate: 10,
     theme: 'white',
-    delay: 7 * rollerOffset,
+    delay: 8 * rollerOffset,
   },
   {
     id: 'roller-8',
@@ -62,7 +62,7 @@ const tapes = [
     left: '34vw',
     rotate: -29,
     theme: 'white',
-    delay: 9 * rollerOffset,
+    delay: 10 * rollerOffset,
   },
   {
     id: 'roller-9',
@@ -70,7 +70,7 @@ const tapes = [
     left: 'calc(-1.5 * var(--roll-width))',
     rotate: 0,
     theme: 'black',
-    delay: 10 * rollerOffset,
+    delay: 11 * rollerOffset,
   },
 ];
 export default tapes;
