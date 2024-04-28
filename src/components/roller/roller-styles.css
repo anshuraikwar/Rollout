@@ -1,0 +1,201 @@
+.roller-positioning-container {
+  position: fixed;
+
+  height: var(--roll-height);
+  width: var(--roll-width);
+
+  overflow: visible;
+}
+
+.rolled-out-tape {
+  height: var(--roll-height);
+  width: fit-content;
+  padding: 20px 0;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+.rolled-out-tape.white {
+  border: 3px solid black;
+
+  background-color: white;
+}
+
+.rolled-out-tape.black {
+  border: 3px solid white;
+
+  background-color: black;
+}
+
+.rolled-out-content-with-bg {
+  height: 100%;
+  width: 200px;
+
+  background-size: auto 100%;
+
+  transition: width var(--animation-duration) linear;
+  overflow: hidden;
+}
+
+.rolled-out-tape.white .rolled-out-content-with-bg {
+  background-image: url('../../assets/img/tape-tile-white.webp');
+}
+
+.rolled-out-tape.black .rolled-out-content-with-bg {
+  background-image: url('../../assets/img/tape-tile-black.webp');
+}
+
+/* unused */
+.rolled-out-content {
+  height: 100%;
+  width: 0px;
+  padding: 0 80px;
+  border-width: 3px 0;
+  border-style: solid;
+  border-color: black;
+
+  font-size: 90px;
+  line-height: 100px;
+
+  writing-mode: vertical-lr;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 60px;
+
+  transform: rotate(180deg);
+  transition: width var(--animation-duration) linear;
+  overflow: hidden;
+}
+
+/* unused */
+.rolled-out-content>div {
+  display: flex;
+  align-items: center;
+}
+
+/* unused */
+.rolled-content-divider {
+  height: 100%;
+  border-right: 3px solid black;
+}
+
+.roll-poisitoned-container {
+  position: absolute;
+  top: 50%;
+  right: 0;
+
+  transform: translate(50%, -50%);
+}
+
+.roll {
+  width: var(--roll-width);
+  height: var(--roll-height);
+
+  border-width: 0 3px;
+  border-style: solid;
+
+  position: relative;
+}
+
+.rolled-out-tape.black .roll {
+  border-color: black;
+
+  background-color: white;
+}
+
+.rolled-out-tape.white .roll {
+  border-color: white;
+
+  background-color: black;
+}
+
+.roll-edges {
+  position: absolute;
+  left: -3px;
+  right: -3px;
+
+  z-index: 2;
+}
+
+.roll-edges>img {
+  width: 100%;
+  height: auto;
+}
+
+.top-edge {
+  top: -9%;
+}
+
+.bottom-edge {
+  bottom: -9%;
+
+  transform: rotateX(180deg);
+}
+
+.roll-content {
+  width: 100%;
+  height: 100%;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.roll-text-position-cont {
+  position: absolute;
+  top: 50%;
+
+  animation: animate-rolling-position var(--rolling-animation-duration) var(--animation-timing-function);
+  transform: translateX(0px);
+}
+
+.roll-text-char-cont {
+  position: relative;
+}
+
+.roll-text-char {
+  position: absolute;
+  top: 50%;
+
+  font-size: 300px;
+  animation: animate-rolling-spinning var(--rolling-animation-duration) var(--animation-timing-function);
+  transform: translateX(-50%) translateY(-50%) rotateY(-90deg);
+}
+
+.rolled-out-tape.black .roll-text-char {
+  color: black;
+}
+
+.rolled-out-tape.white .roll-text-char {
+  color: white;
+}
+
+@keyframes animate-rolling-position {
+  0% {
+    transform: translateX(-3px);
+  }
+
+  50% {
+    transform: translateX(calc(var(--roll-width) / 2));
+  }
+
+  100% {
+    transform: translateX(calc(var(--roll-width) + 3px));
+  }
+}
+
+@keyframes animate-rolling-spinning {
+  0% {
+    transform: translateX(-50%) translateY(-50%) rotateY(-90deg) scale(1);
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotateY(90deg) scale(1);
+  }
+}
