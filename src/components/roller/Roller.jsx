@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import './roller-styles.css';
+
+// import: styles
+import './RollerStyles.css';
+
+// import: assets
 import RollerEdgeWhite from '../../assets/svg/roller-edges-white.svg';
 import RollerEdgeBlack from '../../assets/svg/roller-edges-black.svg';
 

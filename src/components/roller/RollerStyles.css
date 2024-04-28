@@ -48,44 +48,6 @@
   background-image: url('../../assets/img/tape-tile-black.webp');
 }
 
-/* unused */
-.rolled-out-content {
-  height: 100%;
-  width: 0px;
-  padding: 0 80px;
-  border-width: 3px 0;
-  border-style: solid;
-  border-color: black;
-
-  font-size: 90px;
-  line-height: 100px;
-
-  writing-mode: vertical-lr;
-  text-align: center;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: end;
-  gap: 60px;
-
-  transform: rotate(180deg);
-  transition: width var(--animation-duration) linear;
-  overflow: hidden;
-}
-
-/* unused */
-.rolled-out-content>div {
-  display: flex;
-  align-items: center;
-}
-
-/* unused */
-.rolled-content-divider {
-  height: 100%;
-  border-right: 3px solid black;
-}
-
 .roll-poisitoned-container {
   position: absolute;
   top: 50%;
