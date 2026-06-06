@@ -4,9 +4,9 @@ Execution on rolling animation using simple CSS and Javascript.
 No library used.
 
 
-## Deployed on
+## Live Demo
 
-Open [https://anshuraikwar.github.io/Rollout/](https://anshuraikwar.github.io/Rollout/)
+[View the project](https://anshuraikwar.github.io/Rollout/)
 
 
 ## Available Scripts
